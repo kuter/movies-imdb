@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "netguru-movies"
+name = "movies-imdb"
 version = "0.1.0"
-description = "Recruitment task"
+description = "Movies aggregator"
 authors = ["kuter <contact@devktr.pl>"]
 license = "MIT"
 
