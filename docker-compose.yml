@@ -10,7 +10,7 @@
     web:
       build: .
       environment:
-        - DJANGO_SETTINGS_MODULE=netguru_movies.docker
+        - DJANGO_SETTINGS_MODULE=project.docker
       command: python manage.py runserver 0.0.0.0:8000
       volumes:
         - .:/app
@@ -18,3 +18,8 @@
         - "8000:8000"
       depends_on:
         - db
+
+    test:
+      build: .
+      command: sh -c "pip install -r dev.txt 
+        && python manage.py test"
