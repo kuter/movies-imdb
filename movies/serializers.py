@@ -73,7 +73,7 @@ class RatingSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class CreateMovieSerializer(WritableNestedModelSerializer):
+class MovieSerializer(WritableNestedModelSerializer):
     ratings = RatingSerializer(many=True, required=False)
 
     class Meta:

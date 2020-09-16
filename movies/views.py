@@ -4,14 +4,13 @@ from rest_framework.response import Response
 from .api import OMDbAPI
 from .filters import MovieFilter
 from .models import Movie
-from .serializers import CreateMovieSerializer, MovieAPISerializer
+from .serializers import MovieAPISerializer, MovieSerializer
 
 
 class MovieViewSet(viewsets.ModelViewSet):
     queryset = Movie.objects.all()
-    serializer_class = MovieAPISerializer
     filterset_class = MovieFilter
-    serializer_class = CreateMovieSerializer
+    serializer_class = MovieSerializer
     api = OMDbAPI
 
     def create(self, request, *args, **kwargs):
