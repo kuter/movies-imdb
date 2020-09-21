@@ -1,10 +1,6 @@
 [![wemake-python-styleguide](https://img.shields.io/badge/style-wemake-000000.svg)](https://github.com/wemake-services/wemake-python-styleguide)
 
-# Movies IMDB
-
-## Task:
-
-### Movie database
+### Task
 
 We'd like you to build simple REST API for us - a basic movie database interacting with external API.
 Here's full specification of endpoints that we'd like it to have:
