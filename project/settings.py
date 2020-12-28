@@ -140,3 +140,10 @@ REST_FRAMEWORK = {
     ],
     "PAGE_SIZE": 10,
 }
+
+try:
+    import behave_django  # noqa: W0611
+except ModuleNotFoundError:
+    pass
+else:
+    INSTALLED_APPS += ['behave_django']
